@@ -28,13 +28,21 @@ export class ProductRepository implements IProductRepository {
   async findManyByIds(ids: string[]): Promise<Product[]> {
     const products = await this.loadProducts();
 
-    const result = ids.map((id) => {
-      const product = products.find((prod) => prod.id === id);
+    // Create a dictionary for faster lookup
+    const productMap = new Map<string, Product>();
+    for (const product of products) {
+      productMap.set(product.id, product);
+    }
+
+    const result: Product[] = [];
+
+    for (const id of ids) {
+      const product = productMap.get(id);
       if (!product) {
         throw new NotFoundException(`Product with ID '${id}' was not found.`);
       }
-      return product;
-    });
+      result.push(product);
+    }
 
     return result;
   }

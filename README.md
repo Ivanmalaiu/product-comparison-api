@@ -1,98 +1,197 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
-</p>
+# 🛍️ Item Comparison API
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+This project is a simplified RESTful API that allows comparing multiple products. It was built using [NestJS](https://nestjs.com/) with best practices in modularity, validation, testing, and architecture.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+---
 
-## Description
+## 🚀 Getting Started
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+### Prerequisites
 
-## Project setup
+- Node.js >= 18
+- npm or yarn
+
+### Installation
 
 ```bash
-$ npm install
+npm install
 ```
 
-## Compile and run the project
+### Running the app
 
 ```bash
-# development
-$ npm run start
+npm run start:dev
+```
+### Explore the API (Swagger)
 
-# watch mode
-$ npm run start:dev
+You can access the Swagger documentation at:
 
-# production mode
-$ npm run start:prod
+```
+http://localhost:3000/api
 ```
 
-## Run tests
+Use this interface to test the endpoint:  
+**`POST /products/compare`**
+### Running tests
 
 ```bash
-# unit tests
-$ npm run test
+# Unit & integration tests
+npm run test
 
-# e2e tests
-$ npm run test:e2e
+# E2E tests
+npm run test:e2e
 
-# test coverage
-$ npm run test:cov
+# Coverage
+npm run test:cov
 ```
 
-## Deployment
+---
 
-When you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.
+## 📌 API Overview
 
-If you are looking for a cloud-based platform to deploy your NestJS application, check out [Mau](https://mau.nestjs.com), our official platform for deploying NestJS applications on AWS. Mau makes deployment straightforward and fast, requiring just a few simple steps:
+### Base URL
 
-```bash
-$ npm install -g @nestjs/mau
-$ mau deploy
+```
+POST /products/compare
 ```
 
-With Mau, you can deploy your application in just a few clicks, allowing you to focus on building features rather than managing infrastructure.
+### Request body
 
-## Resources
+```json
+{
+  "productIds": [
+    "eec1ec2d-188c-437d-88ca-c2120a4a2c33",
+    "7745dcda-d2df-4a67-ae47-aa0c4297bf3f"
+  ]
+}
+```
 
-Check out a few resources that may come in handy when working with NestJS:
+### Response
 
-- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.
-- For questions and support, please visit our [Discord channel](https://discord.gg/G7Qnnhy).
-- To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).
-- Deploy your application to AWS with the help of [NestJS Mau](https://mau.nestjs.com) in just a few clicks.
-- Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).
-- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
-- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
-- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
+```json
+[
+  {
+    "id": "eec1ec2d-188c-437d-88ca-c2120a4a2c33",
+    "name": "Samsung Galaxy S23",
+    "imageUrl": "https://example.com/images/samsung_galaxy_s23.jpg",
+    "description": "This is a high-quality smartphones product.",
+    "price": 597.9,
+    "rating": 3.7,
+    "specifications": {
+      "Screen": "6.5'' AMOLED",
+      "Battery": "4000 mAh",
+      "Camera": "12 MP"
+    }
+  },
+  {
+    "id": "7745dcda-d2df-4a67-ae47-aa0c4297bf3f",
+    "name": "TCL 4K",
+    "imageUrl": "https://example.com/images/tcl_4k.jpg",
+    "description": "This is a high-quality tvs product.",
+    "price": 302.03,
+    "rating": 4.4,
+    "specifications": {
+      "Screen Size": "55''",
+      "Resolution": "4K",
+      "Panel Type": "QLED"
+    }
+  }
+]
+```
 
-## Support
+### Errors
+- `200 OK` → List of products returned successfully.
+- `400 Bad Request` → Invalid UUIDs or empty array
+- `404 Not Found` → One or more products not found
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+---
 
-## Stay in touch
+## 🧱 Architecture
 
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+We followed a clean, layered architecture inspired by Hexagonal Architecture (Ports & Adapters), keeping business logic decoupled from infrastructure.
 
-## License
+### Folder structure
 
-Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+```
+src/
+│
+├── products/
+│   ├── controller/         # HTTP layer
+│   ├── data/               # Product Data
+│   ├── service/            # Business logic
+│   ├── repository/         # Data source abstraction
+│   ├── model/              # Domain entities
+│   └── dto/                # Request validation
+│
+├── app.module.ts           # Main NestJS module
+test/                       # e2e App test
+```
+
+### Why this architecture?
+
+- ✅ Improves testability
+- ✅ Encourages separation of concerns
+- ✅ Makes it easy to swap infrastructure (e.g., from file-based repo to database)
+- ✅ Works well for scaling the project
+
+---
+## 🤖 Modern Tools & AI Integration
+
+To boost development efficiency, the project integrates **Generative AI (GenAI)** and modern development tools in the following ways:
+
+- **GenAI-assisted development**: Tools like ChatGPT were used for:
+  - Generating unit and e2e test scaffolding.
+  - Refactoring and validating code structure.
+  - Writing documentation, such as this README.
+  - Clarifying edge cases, architecture decisions, and best practices on demand.
+  
+- **VS Code Extensions**: Leveraged productivity extensions for ESLint, Prettier, and Jest integration.
+
+- **Live Reloading & Dev Scripts**: Used `npm run start:dev` with hot reload to speed up iteration.
+
+    These tools helped reduce boilerplate coding time and ensured consistency and clarity throughout the project.
+---
+## 🧪 Testing Strategy
+
+We implemented tests at multiple levels:
+
+- **Unit Tests**: For services, repositories, and controller logic
+- **E2E Tests**: Full HTTP lifecycle validation using Supertest
+- **Mocking**: Dependencies like the repository were mocked for isolation
+- **Validation Errors**: Fully tested with edge cases
+
+---
+
+## 🛠️ Technologies Used
+
+- **NestJS** – Main framework
+- **TypeScript** – Strong typing
+- **Jest** – Testing
+- **Supertest** – E2E testing
+- **class-validator** – DTO validation
+- **ESLint & Prettier** – Linting & formatting
+
+---
+
+## 📌 Notes
+
+- This project does not use a real database. Instead, it reads data from a local JSON file.
+- Future enhancements could include adding pagination, filtering, or connecting to an external data source.
+
+---
+
+## 📂 Example Product Data
+
+Located in:
+
+```
+src/products/data/products.json
+```
+
+Each product includes `id`, `name`, `imageUrl`, `description`, `price`, `rating`, and a `specifications` object.
+
+---
+
+## 🧠 Purpose
+
+This project was built as part of a technical challenge to demonstrate good practices in API design, code structure, and testing.

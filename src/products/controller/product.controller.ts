@@ -17,7 +17,6 @@ export class ProductController {
   @ApiResponse({
     status: 200,
     description: 'List of products returned successfully.',
-    // Swagger needs a DTO, not a TS interface, so this will be ignored unless replaced
   })
   @ApiResponse({ status: 400, description: 'Invalid or missing product IDs.' })
   @ApiResponse({

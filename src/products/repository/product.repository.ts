@@ -6,8 +6,9 @@ import { Product } from '../model/product.model';
 @Injectable()
 export class ProductRepository implements IProductRepository {
   private readonly dataFilePath = path.join(
-    __dirname,
-    '..',
+    process.cwd(),
+    'src',
+    'products',
     'data',
     'products.json',
   );

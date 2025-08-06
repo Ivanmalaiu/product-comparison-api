@@ -4,7 +4,7 @@ import type { IProductService } from '../service/product.service.interface';
 import { Product } from '../model/product.model';
 import { CompareDto } from '../dto/compare.dto';
 @ApiTags('Products')
-@Controller('compare')
+@Controller('products/compare')
 export class ProductController {
   constructor(
     @Inject('IProductService')

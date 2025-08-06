@@ -35,10 +35,10 @@ describe('ProductCompare (e2e)', () => {
     '7745dcda-d2df-4a67-ae47-aa0c4297bf3f',
   ];
 
-  describe('/compare (POST)', () => {
+  describe('/products/compare (POST)', () => {
     it('should return product details for valid IDs', async () => {
       const response = await request(app.getHttpServer())
-        .post('/compare')
+        .post('/products/compare')
         .send({ productIds: validIds })
         .expect(200);
 
@@ -51,7 +51,7 @@ describe('ProductCompare (e2e)', () => {
 
     it('should return 400 for invalid UUIDs', async () => {
       const response = await request(app.getHttpServer())
-        .post('/compare')
+        .post('/products/compare')
         .send({ productIds: ['not-a-uuid'] })
         .expect(400);
 
@@ -62,7 +62,7 @@ describe('ProductCompare (e2e)', () => {
 
     it('should return 404 if a product is not found', async () => {
       const response = await request(app.getHttpServer())
-        .post('/compare')
+        .post('/products/compare')
         .send({
           productIds: [
             'a3f04d9b-7b21-4b84-96dc-3f1dceef79b2',
@@ -78,7 +78,7 @@ describe('ProductCompare (e2e)', () => {
 
     it('should return 400 if no IDs are provided', async () => {
       const response = await request(app.getHttpServer())
-        .post('/compare')
+        .post('/products/compare')
         .send({ productIds: [] })
         .expect(400);
 

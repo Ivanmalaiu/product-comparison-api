@@ -1,0 +1,392 @@
+[
+  {
+    "id": "eec1ec2d-188c-437d-88ca-c2120a4a2c33",
+    "name": "Samsung Galaxy S23",
+    "imageUrl": "https://example.com/images/samsung_galaxy_s23.jpg",
+    "description": "This is a high-quality smartphones product.",
+    "price": 597.9,
+    "rating": 3.7,
+    "specifications": {
+      "Screen": "6.5'' AMOLED",
+      "Battery": "4000 mAh",
+      "Camera": "12 MP"
+    }
+  },
+  {
+    "id": "7745dcda-d2df-4a67-ae47-aa0c4297bf3f",
+    "name": "TCL 4K",
+    "imageUrl": "https://example.com/images/tcl_4k.jpg",
+    "description": "This is a high-quality tvs product.",
+    "price": 302.03,
+    "rating": 4.4,
+    "specifications": {
+      "Screen Size": "55''",
+      "Resolution": "4K",
+      "Panel Type": "QLED"
+    }
+  },
+  {
+    "id": "0e527b24-785f-44e8-895f-a8a84c275e4c",
+    "name": "MacBook Pro",
+    "imageUrl": "https://example.com/images/macbook_pro.jpg",
+    "description": "This is a high-quality laptops product.",
+    "price": 1097.75,
+    "rating": 4.3,
+    "specifications": {
+      "Processor": "Ryzen 5",
+      "RAM": "16 GB",
+      "Storage": "512 GB SSD"
+    }
+  },
+  {
+    "id": "d2bd2144-6d54-4319-a5d5-9114503633ff",
+    "name": "Casual Hoodie",
+    "imageUrl": "https://example.com/images/casual_hoodie.jpg",
+    "description": "This is a high-quality clothing product.",
+    "price": 1968.87,
+    "rating": 4.2,
+    "specifications": {
+      "Size": "M",
+      "Material": "Cotton",
+      "Gender": "Unisex"
+    }
+  },
+  {
+    "id": "361aa17f-8443-44f0-a2bb-d4435259d354",
+    "name": "Bose QC45",
+    "imageUrl": "https://example.com/images/bose_qc45.jpg",
+    "description": "This is a high-quality headphones product.",
+    "price": 1294.31,
+    "rating": 4.6,
+    "specifications": {
+      "Type": "In-ear",
+      "Battery Life": "20 hrs",
+      "Noise Cancelling": "Yes"
+    }
+  },
+  {
+    "id": "ed4983ee-1a9b-4ce7-9cbb-a9cb1c1d9ebf",
+    "name": "Samsung Galaxy S23",
+    "imageUrl": "https://example.com/images/samsung_galaxy_s23.jpg",
+    "description": "This is a high-quality smartphones product.",
+    "price": 559.4,
+    "rating": 3.9,
+    "specifications": {
+      "Screen": "6.1'' OLED",
+      "Battery": "3000 mAh",
+      "Camera": "48 MP"
+    }
+  },
+  {
+    "id": "4211f7d2-f7ee-41d2-a3bf-6d3dff5c0f43",
+    "name": "Philips Ambilight",
+    "imageUrl": "https://example.com/images/philips_ambilight.jpg",
+    "description": "This is a high-quality tvs product.",
+    "price": 300.38,
+    "rating": 4.1,
+    "specifications": {
+      "Screen Size": "55''",
+      "Resolution": "4K",
+      "Panel Type": "QLED"
+    }
+  },
+  {
+    "id": "62cd6111-253a-47c5-af73-69edef1c9ecd",
+    "name": "Lenovo ThinkPad",
+    "imageUrl": "https://example.com/images/lenovo_thinkpad.jpg",
+    "description": "This is a high-quality laptops product.",
+    "price": 1820.94,
+    "rating": 5.0,
+    "specifications": {
+      "Processor": "Ryzen 5",
+      "RAM": "32 GB",
+      "Storage": "1 TB SSD"
+    }
+  },
+  {
+    "id": "d7264ba2-857d-476c-aa9c-423fd4da6991",
+    "name": "Casual Hoodie",
+    "imageUrl": "https://example.com/images/casual_hoodie.jpg",
+    "description": "This is a high-quality clothing product.",
+    "price": 943.73,
+    "rating": 4.4,
+    "specifications": {
+      "Size": "L",
+      "Material": "Wool",
+      "Gender": "Unisex"
+    }
+  },
+  {
+    "id": "d99d9e66-69fe-42ba-8f12-39766f392d3c",
+    "name": "Sony WH-1000XM5",
+    "imageUrl": "https://example.com/images/sony_wh-1000xm5.jpg",
+    "description": "This is a high-quality headphones product.",
+    "price": 1287.01,
+    "rating": 3.5,
+    "specifications": {
+      "Type": "On-ear",
+      "Battery Life": "15 hrs",
+      "Noise Cancelling": "No"
+    }
+  },
+  {
+    "id": "494f135f-0603-4242-8c15-af46f0fc8ef2",
+    "name": "iPhone 15",
+    "imageUrl": "https://example.com/images/iphone_15.jpg",
+    "description": "This is a high-quality smartphones product.",
+    "price": 1178.86,
+    "rating": 4.0,
+    "specifications": {
+      "Screen": "6.1'' OLED",
+      "Battery": "5000 mAh",
+      "Camera": "12 MP"
+    }
+  },
+  {
+    "id": "5ff68905-dabe-4fb5-a2f4-e606579fb1b7",
+    "name": "TCL 4K",
+    "imageUrl": "https://example.com/images/tcl_4k.jpg",
+    "description": "This is a high-quality tvs product.",
+    "price": 1529.1,
+    "rating": 4.5,
+    "specifications": {
+      "Screen Size": "75''",
+      "Resolution": "4K",
+      "Panel Type": "QLED"
+    }
+  },
+  {
+    "id": "c8d303b1-a3d1-4033-9091-c850da1e865c",
+    "name": "Dell XPS",
+    "imageUrl": "https://example.com/images/dell_xps.jpg",
+    "description": "This is a high-quality laptops product.",
+    "price": 678.22,
+    "rating": 4.9,
+    "specifications": {
+      "Processor": "Ryzen 7",
+      "RAM": "16 GB",
+      "Storage": "512 GB SSD"
+    }
+  },
+  {
+    "id": "10df729a-d891-4c47-b385-d0d9577acafa",
+    "name": "Winter Jacket",
+    "imageUrl": "https://example.com/images/winter_jacket.jpg",
+    "description": "This is a high-quality clothing product.",
+    "price": 1102.46,
+    "rating": 3.9,
+    "specifications": {
+      "Size": "XL",
+      "Material": "Polyester",
+      "Gender": "Unisex"
+    }
+  },
+  {
+    "id": "943ef0b4-ff1e-437b-a4cc-e80f0a86c7f1",
+    "name": "Beats Studio",
+    "imageUrl": "https://example.com/images/beats_studio.jpg",
+    "description": "This is a high-quality headphones product.",
+    "price": 1967.15,
+    "rating": 4.2,
+    "specifications": {
+      "Type": "Over-ear",
+      "Battery Life": "30 hrs",
+      "Noise Cancelling": "Yes"
+    }
+  },
+  {
+    "id": "747d4ce4-a8b8-49ae-bace-50d194fb9eb5",
+    "name": "OnePlus 11",
+    "imageUrl": "https://example.com/images/oneplus_11.jpg",
+    "description": "This is a high-quality smartphones product.",
+    "price": 756.75,
+    "rating": 3.5,
+    "specifications": {
+      "Screen": "6.5'' AMOLED",
+      "Battery": "4000 mAh",
+      "Camera": "12 MP"
+    }
+  },
+  {
+    "id": "2356dddc-5f0b-4aff-aab0-6b515749df64",
+    "name": "Samsung QLED",
+    "imageUrl": "https://example.com/images/samsung_qled.jpg",
+    "description": "This is a high-quality tvs product.",
+    "price": 506.34,
+    "rating": 4.2,
+    "specifications": {
+      "Screen Size": "55''",
+      "Resolution": "4K",
+      "Panel Type": "LED"
+    }
+  },
+  {
+    "id": "8d4ab127-0219-4eea-bb0e-96428fd6ffce",
+    "name": "MacBook Pro",
+    "imageUrl": "https://example.com/images/macbook_pro.jpg",
+    "description": "This is a high-quality laptops product.",
+    "price": 837.37,
+    "rating": 4.6,
+    "specifications": {
+      "Processor": "i5",
+      "RAM": "8 GB",
+      "Storage": "256 GB SSD"
+    }
+  },
+  {
+    "id": "b7feb932-bb37-4d79-9be2-850d34f435fc",
+    "name": "Basic T-Shirt",
+    "imageUrl": "https://example.com/images/basic_t-shirt.jpg",
+    "description": "This is a high-quality clothing product.",
+    "price": 1114.35,
+    "rating": 3.1,
+    "specifications": {
+      "Size": "XL",
+      "Material": "Cotton",
+      "Gender": "Male"
+    }
+  },
+  {
+    "id": "9e5aee56-d5ac-47e8-8523-91d76e3d65b7",
+    "name": "AirPods Pro",
+    "imageUrl": "https://example.com/images/airpods_pro.jpg",
+    "description": "This is a high-quality headphones product.",
+    "price": 685.51,
+    "rating": 3.3,
+    "specifications": {
+      "Type": "In-ear",
+      "Battery Life": "30 hrs",
+      "Noise Cancelling": "No"
+    }
+  },
+  {
+    "id": "a5d77cd9-96d1-42f5-8523-bcfe853f0e38",
+    "name": "iPhone 15",
+    "imageUrl": "https://example.com/images/iphone_15.jpg",
+    "description": "This is a high-quality smartphones product.",
+    "price": 796.37,
+    "rating": 3.3,
+    "specifications": {
+      "Screen": "6.5'' AMOLED",
+      "Battery": "4000 mAh",
+      "Camera": "12 MP"
+    }
+  },
+  {
+    "id": "06ea9700-bb5e-43ef-bd3c-701479dbbdea",
+    "name": "Sony Bravia",
+    "imageUrl": "https://example.com/images/sony_bravia.jpg",
+    "description": "This is a high-quality tvs product.",
+    "price": 1919.77,
+    "rating": 3.8,
+    "specifications": {
+      "Screen Size": "75''",
+      "Resolution": "4K",
+      "Panel Type": "QLED"
+    }
+  },
+  {
+    "id": "c631008b-dd56-47dc-8963-133571e0f1a4",
+    "name": "MacBook Pro",
+    "imageUrl": "https://example.com/images/macbook_pro.jpg",
+    "description": "This is a high-quality laptops product.",
+    "price": 345.19,
+    "rating": 4.8,
+    "specifications": {
+      "Processor": "i7",
+      "RAM": "32 GB",
+      "Storage": "512 GB SSD"
+    }
+  },
+  {
+    "id": "92e49321-514e-4a64-8a1c-75bb41f5049e",
+    "name": "Casual Hoodie",
+    "imageUrl": "https://example.com/images/casual_hoodie.jpg",
+    "description": "This is a high-quality clothing product.",
+    "price": 807.66,
+    "rating": 3.7,
+    "specifications": {
+      "Size": "XL",
+      "Material": "Polyester",
+      "Gender": "Female"
+    }
+  },
+  {
+    "id": "d6ab63d9-fc55-4cce-8f2c-3d06b4aa6315",
+    "name": "Bose QC45",
+    "imageUrl": "https://example.com/images/bose_qc45.jpg",
+    "description": "This is a high-quality headphones product.",
+    "price": 1224.24,
+    "rating": 3.9,
+    "specifications": {
+      "Type": "In-ear",
+      "Battery Life": "30 hrs",
+      "Noise Cancelling": "No"
+    }
+  },
+  {
+    "id": "852cd5f8-7d9e-4a42-9cca-02796684e40d",
+    "name": "OnePlus 11",
+    "imageUrl": "https://example.com/images/oneplus_11.jpg",
+    "description": "This is a high-quality smartphones product.",
+    "price": 266.45,
+    "rating": 4.8,
+    "specifications": {
+      "Screen": "6.1'' OLED",
+      "Battery": "4000 mAh",
+      "Camera": "48 MP"
+    }
+  },
+  {
+    "id": "fb8884ea-8cff-4717-a511-ab685a1c9021",
+    "name": "Samsung QLED",
+    "imageUrl": "https://example.com/images/samsung_qled.jpg",
+    "description": "This is a high-quality tvs product.",
+    "price": 1724.79,
+    "rating": 4.4,
+    "specifications": {
+      "Screen Size": "75''",
+      "Resolution": "1080p",
+      "Panel Type": "LED"
+    }
+  },
+  {
+    "id": "d2650f73-d190-4da5-9b12-38f52df0e6ee",
+    "name": "HP Envy",
+    "imageUrl": "https://example.com/images/hp_envy.jpg",
+    "description": "This is a high-quality laptops product.",
+    "price": 258.4,
+    "rating": 4.0,
+    "specifications": {
+      "Processor": "i7",
+      "RAM": "8 GB",
+      "Storage": "1 TB SSD"
+    }
+  },
+  {
+    "id": "81b235c7-ecf4-4e39-83ee-75b0387b8bf9",
+    "name": "Running Shorts",
+    "imageUrl": "https://example.com/images/running_shorts.jpg",
+    "description": "This is a high-quality clothing product.",
+    "price": 1258.74,
+    "rating": 4.9,
+    "specifications": {
+      "Size": "M",
+      "Material": "Polyester",
+      "Gender": "Female"
+    }
+  },
+  {
+    "id": "0b2ab00a-b410-4650-a8f6-ae9a8d4544e5",
+    "name": "Beats Studio",
+    "imageUrl": "https://example.com/images/beats_studio.jpg",
+    "description": "This is a high-quality headphones product.",
+    "price": 1788.13,
+    "rating": 3.8,
+    "specifications": {
+      "Type": "In-ear",
+      "Battery Life": "15 hrs",
+      "Noise Cancelling": "No"
+    }
+  }
+]

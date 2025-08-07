@@ -1,7 +1,9 @@
 # 🛍️ Item Comparison API
 
 This project is a simplified RESTful API that allows comparing multiple products. It was built using [NestJS](https://nestjs.com/) with best practices in modularity, validation, testing, and architecture.
+#### GitHub Repository
 
+- [GitHub Public Repository](https://github.com/Ivanmalaiu/product-comparison-api)
 ---
 
 ## 🚀 Getting Started

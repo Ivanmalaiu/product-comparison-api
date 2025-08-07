@@ -7,3 +7,5 @@
 > Help me write the README documentation for a NestJS API project that compares products. It should include an explanation of the architecture used, main endpoints, setup and test instructions, and any key decisions made during development.
 
 > How would you change this repository so the products are not loaded and parsed each time.
+
+> Create a JSON array with 30 products. Each product should have: id (UUID v4), name, description, price,imageUrl,rating, specifications (2–4 simple key-value pairs)

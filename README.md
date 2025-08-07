@@ -108,7 +108,30 @@ POST /products/compare
 
 ## 🧱 Architecture
 
-We followed a clean, layered architecture inspired by Hexagonal Architecture (Ports & Adapters), keeping business logic decoupled from infrastructure.
+We implemented a **layered architecture** following clean code principles:
+
+- **Controller Layer:** Receives HTTP requests and delegates to the service.
+- **Service Layer:** Contains the business logic and coordinates actions.
+- **Repository Layer:** Handles data access. In this case, it loads products from a local JSON file.
+
+Each layer communicates via **interfaces**, promoting separation of concerns and making the system easier to test, maintain, and extend.
+
+### ❌ Why not Hexagonal (Ports & Adapters)?
+
+Although our architecture was inspired by **Hexagonal Architecture**, we chose not to apply it fully. The reason was pragmatic:  
+> This project’s scope is a **simple REST API for comparing products**, and full Hexagonal complexity would be overkill for such a small use case.
+
+However, the layered structure still reflects many of the same benefits:  
+- Clear boundaries between concerns  
+- Flexibility to replace or mock layers (e.g., replace JSON with a real DB)  
+- Testability at each level
+
+### 💡 Design Decisions
+
+- **In-memory cache:** Instead of reading and parsing the `products.json` file on every request, we load it **once** at application startup and store it in memory.  
+  This improves performance and avoids unnecessary I/O operations.
+- **Validation and error handling:** We use DTO validation and explicit `NotFoundException` responses to fail fast and clearly.
+- **OpenAPI with Swagger:** Provides automatic and interactive API documentation out-of-the-box.
 
 ### Folder structure
 
@@ -143,6 +166,7 @@ To boost development efficiency, the project integrates **Generative AI (GenAI)*
   - Generating unit and e2e test scaffolding.
   - Refactoring and validating code structure.
   - Writing documentation, such as this README.
+  - Creating the .json data file for products.
   - Clarifying edge cases, architecture decisions, and best practices on demand.
   
 - **VS Code Extensions**: Leveraged productivity extensions for ESLint, Prettier, and Jest integration.
